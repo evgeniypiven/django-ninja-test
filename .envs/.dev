@@ -1,0 +1,15 @@
+# ------------------------------------------------------------------------------
+# Core Settings
+# ------------------------------------------------------------------------------
+DEBUG=True
+SECRET_KEY=django-insecure-4nn%3ealq@pyf_#q74l@m0yqs_nkf91p)!h3%8z$t$a1k-$gxx
+DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
+# ------------------------------------------------------------------------------
+# PostgreSQL
+# ------------------------------------------------------------------------------
+SQL_ENGINE=django.db.backends.postgresql
+SQL_DATABASE=starnavi_db
+SQL_USER=starnavi
+SQL_PASSWORD=starnavi
+SQL_HOST=postgres
+SQL_PORT=5432
