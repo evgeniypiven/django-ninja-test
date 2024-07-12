@@ -12,12 +12,15 @@ from ninja.testing import TestClient
 from .models import Post, Comment
 from .api import api as posts_api
 from authorization.api import api as authorization_api
-from .utils import get_user_with_token
+from .utils import get_user_with_token, get_token_with_user
 from authorization.models import CustomUser
 
 
 def get_access_token():
-    CustomUser.objects.filter(username="test").delete()
+    if CustomUser.objects.filter(username="test").exists():
+        test_user = CustomUser.objects.get(username="test")
+        if get_token_with_user(test_user.id):
+            return get_token_with_user(test_user.id)
 
     authorization_client = TestClient(authorization_api)
     data = {
