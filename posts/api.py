@@ -536,6 +536,10 @@ def enable_auto_reply(request, post_id: int, auto_reply_config: AutoReplyConfigS
     - value: Bearer xxxxxxxxxxxxxxxxxx
 
     Request parameters(body):
+    - name: hours
+    - type: Integer
+    - description: hours delay for task execution
+
     - name: post_id
     - type: Integer
     - description: post id
