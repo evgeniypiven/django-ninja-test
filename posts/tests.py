@@ -21,6 +21,8 @@ def get_access_token():
         test_user = CustomUser.objects.get(username="test")
         if get_token_with_user(test_user.id):
             return get_token_with_user(test_user.id)
+        else:
+            test_user.delete()
 
     authorization_client = TestClient(authorization_api)
     data = {
