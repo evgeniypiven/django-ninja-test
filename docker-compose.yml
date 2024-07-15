@@ -19,5 +19,12 @@ services:
       - POSTGRES_USER=starnavi
       - POSTGRES_PASSWORD=starnavi
       - POSTGRES_DB=starnavi_db
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
 volumes:
   postgres_data:
+  redis_data:

@@ -31,6 +31,20 @@ http://127.0.0.1:8000/admin
 ```bash 
 docker-compose exec web python manage.py test posts.tests
 ```
+5. Launch enable auto reply for post. For this task firstly you have to build or launch redis container. After that,
+through next command you have to launch celery worker:
+```bash 
+docker-compose exec web celery -A starnavi.celery_app worker --loglevel=INFO -P solo
+```
+After launch worker, you can launch enable auto reply through request:
+```bash 
+http://127.0.0.1:8000/api/posts/enable-auto-reply/{post_id}
+```
+In previous request you have to pass:
+    Bearer token - token of authorization;
+    hours - task delay attribute in request json body;
+    post_id - id of specific post
+
 For using REST API, you can check Project APIs list by link:
 ```bash 
 http://127.0.0.1:8000/api/authorization/docs
