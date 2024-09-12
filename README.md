@@ -1,6 +1,6 @@
-# Starnavi Project
+# Django Ninja Test Project
 
-Project starnavi provides API of posts and authorization
+Project django ninja test provides API of posts and authorization
 
 # Configure Local Development Environment
 ## Requirements
