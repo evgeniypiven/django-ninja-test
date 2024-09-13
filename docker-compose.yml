@@ -16,9 +16,9 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_USER=starnavi
-      - POSTGRES_PASSWORD=starnavi
-      - POSTGRES_DB=starnavi_db
+      - POSTGRES_USER=django_ninja_test
+      - POSTGRES_PASSWORD=django_ninja_test
+      - POSTGRES_DB=django_ninja_test_db
   redis:
     image: redis:latest
     ports:
