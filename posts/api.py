@@ -25,7 +25,7 @@ from .schema import (
     AutoReplyConfigSchema
 )
 from .models import Post, Comment
-from starnavi.schema import Error
+from django_ninja_test.schema import Error
 from .utils import get_user_with_token
 from .tasks import auto_reply_post_comments
 

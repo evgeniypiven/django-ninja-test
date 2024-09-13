@@ -9,7 +9,7 @@ from django.utils import timezone
 from rest_framework.authtoken.models import Token
 
 # Local application/library specific imports.
-from starnavi.utils.files.utils import UploadToGeneratorBase
+from django_ninja_test.utils.files.utils import UploadToGeneratorBase
 from authorization.models import CustomUser
 
 

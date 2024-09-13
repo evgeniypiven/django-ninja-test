@@ -1,5 +1,5 @@
 """
-WSGI config for django-ninja-test project.
+WSGI config for django_ninja_test project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django-ninja-test.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_ninja_test.settings')
 
 application = get_wsgi_application()

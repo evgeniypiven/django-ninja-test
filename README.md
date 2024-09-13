@@ -34,7 +34,7 @@ docker-compose exec web python manage.py test posts.tests
 5. Launch enable auto reply for post. For this task firstly you have to build or launch redis container. After that,
 through next command you have to launch celery worker:
 ```bash 
-docker-compose exec web celery -A django-ninja-test.celery_app worker --loglevel=INFO -P solo
+docker-compose exec web celery -A django_ninja_test.celery_app worker --loglevel=INFO -P solo
 ```
 After launch worker, you can launch enable auto reply through request:
 ```bash 

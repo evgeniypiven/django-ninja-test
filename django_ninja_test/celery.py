@@ -12,10 +12,10 @@ from celery import Celery
 
 
 # Set the default Django settings module for the 'celery' program.
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django-ninja-test.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_ninja_test.settings')
 
 # Create an instance of Celery and configure it using the Django settings.
-app = Celery('django-ninja-test')
+app = Celery('django_ninja_test')
 
 # Load task modules from all registered Django app configs.
 app.config_from_object('django.conf:settings', namespace='CELERY')

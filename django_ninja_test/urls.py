@@ -1,5 +1,5 @@
 """
-URL configuration for django-ninja-test project.
+URL configuration for django_ninja_test project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/

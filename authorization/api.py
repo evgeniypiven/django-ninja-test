@@ -16,7 +16,7 @@ from .schema import (
     LoginSchema,
     AuthorizationResponseSchema,
 )
-from starnavi.schema import Error
+from django_ninja_test.schema import Error
 from .models import CustomUser
 
 

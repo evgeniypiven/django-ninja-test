@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
             options={
                 'verbose_name': 'Post',
                 'verbose_name_plural': 'Posts',
-                'db_table': 'starnavi_posts',
+                'db_table': 'django_ninja_test_posts',
             },
         ),
         migrations.CreateModel(
@@ -46,7 +46,7 @@ class Migration(migrations.Migration):
             options={
                 'verbose_name': 'Comment',
                 'verbose_name_plural': 'Comments',
-                'db_table': 'starnavi_comments',
+                'db_table': 'django_ninja_test_comments',
             },
         ),
     ]

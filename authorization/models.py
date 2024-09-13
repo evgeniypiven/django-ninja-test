@@ -76,6 +76,6 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 
     class Meta:
         app_label = 'authorization'
-        db_table = 'starnavi_authorization_custom_user'
+        db_table = 'django_ninja_test_authorization_custom_user'
         verbose_name = _('Custom User')
         verbose_name_plural = _('Custom Users')

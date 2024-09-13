@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
             options={
                 'verbose_name': 'Custom User',
                 'verbose_name_plural': 'Custom Users',
-                'db_table': 'starnavi_authorization_custom_user',
+                'db_table': 'django_ninja_test_authorization_custom_user',
             },
         ),
     ]

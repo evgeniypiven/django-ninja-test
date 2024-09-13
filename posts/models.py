@@ -78,7 +78,7 @@ class Post(models.Model):
 
     class Meta:
         app_label = 'posts'
-        db_table = 'starnavi_posts'
+        db_table = 'django_ninja_test_posts'
         verbose_name = _('Post')
         verbose_name_plural = _('Posts')
 
@@ -146,6 +146,6 @@ class Comment(models.Model):
 
     class Meta:
         app_label = 'posts'
-        db_table = 'starnavi_comments'
+        db_table = 'django_ninja_test_comments'
         verbose_name = _('Comment')
         verbose_name_plural = _('Comments')
